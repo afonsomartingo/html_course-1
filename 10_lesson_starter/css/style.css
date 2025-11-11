@@ -13,53 +13,55 @@ body {
 
 /* Table Styles */
 table {
-    width: 100%;
+    width: 80%;
+    max-width: 500px;
     border-collapse: collapse;
-    margin: 2rem 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    border: 2px solid #333;
     font-family: 'Courier New', Courier, monospace;
 }
 
 caption {
     font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 0.75rem;
-    text-align: left;
-    color: #333;
-    padding: 0.5rem;
+    font-weight: normal;
+    padding: 1rem;
+    text-align: center;
+    color: #666;
+    letter-spacing: 0.1em;
 }
 
 thead {
-    background-color: #333;
-    color: white;
+    background-color: #fff;
+    border-bottom: 2px solid #333;
 }
 
 th {
-    padding: 1rem;
-    text-align: left;
+    padding: 0.75rem;
+    text-align: center;
     font-weight: bold;
     border: 1px solid #333;
+    font-size: 1.1rem;
 }
 
 td {
     padding: 0.75rem 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+tbody td:first-child {
+    text-align: left;
+    font-weight: bold;
+    vertical-align: middle;
 }
 
 tbody tr {
     background-color: #fff;
-    transition: background-color 0.2s ease;
 }
 
-tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-tbody tr:hover {
-    background-color: #f0f0f0;
-}
-
-tbody td:last-child {
-    font-weight: bold;
-    color: #2a9d2a;
+tfoot td {
+    text-align: center;
+    padding: 0.75rem;
+    border: 1px solid #333;
+    color: #666;
 }
